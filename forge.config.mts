@@ -10,6 +10,13 @@ import { FuseV1Options, FuseVersion } from '@electron/fuses';
 const config: ForgeConfig = {
   packagerConfig: {
     asar: true,
+    osxSign: process.env.MACOS_SIGN_IDENTITY
+      ? {
+          identity: process.env.MACOS_SIGN_IDENTITY,
+          identityValidation: false,
+          optionsForFile: () => ({ hardenedRuntime: false }),
+        }
+      : undefined,
   },
   rebuildConfig: {},
   makers: [
