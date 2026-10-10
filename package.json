@@ -10,6 +10,7 @@
     "name": "ravshansbox",
     "email": "ravshansbox@gmail.com"
   },
+  "repository": "github:ravshansbox/electron-demo",
   "main": ".vite/build/main.cjs",
   "scripts": {
     "start": "electron-forge start",
@@ -45,6 +46,7 @@
   "dependencies": {
     "electron-squirrel-startup": "^1.0.1",
     "react": "^19.3.0",
-    "react-dom": "^19.3.0"
+    "react-dom": "^19.3.0",
+    "update-electron-app": "^3.3.0"
   }
 }
